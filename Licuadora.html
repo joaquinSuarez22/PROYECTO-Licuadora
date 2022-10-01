@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/licuadoraApagada.png" />
+    <title>PROYECTO LICUADORA</title>
+
+    <!-- referencias de la tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="titulo">
+      <h1>PROYECTO licuadora</h1>
+    </header>
+
+    <div class="container">
+      <div id="blender" class="blender">
+        <div
+          id="blender-buttom"
+          class="blender-button"
+          onclick="controlarLicuadora()"
+          style="cursor: pointer"
+        ></div>
+      </div>
+    </div>
+
+    <audio
+      id="blender-button-sounds"
+      src="sounds/botonLicuadora.mp3"
+      type="audio/mpeg"
+    ></audio>
+    <audio
+      id="blender-sounds"
+      src="sounds/licuadora.mp3"
+      type="audio/mpeg"
+      loop
+    ></audio>
+
+    <script src="motorcito.js"></script>
+  </body>
+</html>
